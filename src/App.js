@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Friend from './components/Friend/Friend';
 
 function App() {
 
@@ -13,8 +14,11 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div >
           <h1>Friends: {friends.length}</h1>
+          {
+            friends.map(friend => <Friend friend ={friend}></Friend>)
+          }
     </div>
   );
 }
