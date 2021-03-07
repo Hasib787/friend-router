@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Friend = (props) => {
-    const {name, email} = props.friend;
+    const { name, email } = props.friend;
     const friendStyle = {
-     border :'1px solid lightgray',
-     borderRadius :'1em',
-     margin : '1em',
-     padding: '1em'
+        border: '1px solid purple',
+        borderRadius: '1em',
+        margin: '1em',
+        padding: '1em'
 
     }
     return (
